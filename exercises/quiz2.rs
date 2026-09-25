@@ -33,7 +33,7 @@ mod my_module {
     // TODO: Complete the function signature!
     pub fn transformer(input: Vec<(String,Command)>) -> Vec<String>{
         // TODO: Complete the output declaration!
-        let mut output:(String,Command) = vec![];
+        let mut output: Vec<String> = vec![];
         for (string, command) in input.iter() {
             // TODO: Complete the function body. You can do it!
             match command{
