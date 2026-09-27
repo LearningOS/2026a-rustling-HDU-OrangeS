@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "LearningOS/2026a-rustling-HDU-OrangeS",
-  "commit": "751fec6f8a4de3cf235214b3bd8f3af340a57aa8",
-  "score": 64,
+  "commit": "bd7da1b21d6c1b2b4d910d84a638588d4b7da6a1",
+  "score": 65,
   "totalScore": 110,
   "exercises": [
     {
@@ -457,9 +457,9 @@
     {
       "name": "lifetimes1",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "lifetimes2",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "HDU-OrangeS",
-  "runId": "36292175000",
+  "runId": "36298358813",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
