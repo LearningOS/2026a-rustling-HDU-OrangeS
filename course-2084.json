@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "LearningOS/2026a-rustling-HDU-OrangeS",
-  "commit": "cbb2e52d07f02398c38691f0ced5e1bf0fed9a0c",
-  "score": 93,
+  "commit": "bfcce330266fdd35e87711a7f1a856f4ffeb4495",
+  "score": 94,
   "totalScore": 110,
   "exercises": [
     {
@@ -625,9 +625,9 @@
     {
       "name": "clippy2",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "clippy3",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "HDU-OrangeS",
-  "runId": "36693041101",
+  "runId": "36693851166",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
