@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "LearningOS/2026a-rustling-HDU-OrangeS",
-  "commit": "b8ea4ad6634ffe8d2a69d0a35f7013893622a3b6",
-  "score": 98,
+  "commit": "c93927729a53c16f8181aa21f844efb3bc8a4354",
+  "score": 99,
   "totalScore": 110,
   "exercises": [
     {
@@ -660,9 +660,9 @@
     {
       "name": "try_from_into",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "as_ref_mut",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "HDU-OrangeS",
-  "runId": "36812123392",
+  "runId": "36814967620",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
