@@ -68,15 +68,41 @@ impl<T> LinkedList<T> {
             },
         }
     }
-	pub fn merge(list_a:LinkedList<T>,list_b:LinkedList<T>) -> Self
-	{
-		//TODO
-		Self {
-            length: 0,
-            start: None,
-            end: None,
+    fn push_node(&mut self,node:NonNull<Node<T>>){
+        unsafe{(*node.as_ptr()).next=None;}
+        match self.end{
+            None=>self.start=Some(node),
+            Some(end)=>unsafe{(*end.as_ptr()).next=Some(node)},
         }
-	}
+        self.end=Some(node);
+        self.length+=1;
+    }
+}
+
+impl<T:PartialOrd> LinkedList<T>{
+    pub fn merge(list_a:LinkedList<T>,list_b:LinkedList<T>) -> Self
+	{
+		let mut merged=Self::new();
+        let mut a=list_a.start;
+        let mut b=list_b.start;
+
+        while let(Some(pa),Some(pb))=(a,b){
+            let take_a=unsafe{(*pa.as_ptr()).val<(*pb.as_ptr()).val};
+            if take_a{
+                a=unsafe{(*pa.as_ptr()).next};
+                merged.push_node(pa);
+            }else{
+                b=unsafe{(*pb.as_ptr()).next};
+                merged.push_node(pb);
+            }
+	    }
+        let mut rest=if a.is_some(){a}else{b};
+        while let Some(p)=rest{
+            rest=unsafe{(*p.as_ptr()).next};
+            merged.push_node(p);
+        }
+        merged
+    }
 }
 
 impl<T> Display for LinkedList<T>
